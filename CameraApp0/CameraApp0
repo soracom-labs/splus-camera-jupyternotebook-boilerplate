@@ -1,0 +1,62 @@
+#!/opt/soracom/python/bin/python
+# ======================================================
+# Project Name    : Jupyter Notebook boilerplate project for S+ Camera Basic.
+# File Name       : CameraApp0
+# Copyright © 2020 SORACOM, INC.
+# ======================================================
+
+import json
+import logging
+import os
+import requests
+import sys
+import warnings
+
+from logging import getLogger
+
+logging.basicConfig(level=logging.INFO)
+logger = getLogger(__name__)
+
+from IPython.terminal.ipapp import launch_new_instance
+from IPython.lib import security
+
+warnings.filterwarnings("ignore", module="zmq.*")
+
+env = os.getenv("SORACOM_ENV_FREE_PARAM")
+password = ""
+try:
+    env = json.loads(env)
+    password = env["password"]
+except:
+    logger.error(
+        'You have to provide password via SORACOM_ENV_FREE_PARAM inform of {"password":"PASSWORD"}'
+    )
+    os.exit(1)
+
+
+def get_my_ip():
+    metadata_response = requests.get(
+        "http://metadata.soracom.io/v1/subscriber.ipAddress"
+    )
+    my_ip = metadata_response.text
+    if not my_ip:
+        raise Exception("Failed to fetch my ipaddress from metadata.soracom.io")
+    return my_ip.strip()
+
+
+def main():
+
+    logger.info("Running in notebook server mode.")
+    sys.argv.append("notebook")
+    sys.argv.append("--IPKernelApp.pylab='inline'")
+    sys.argv.append("--NotebookApp.ip=" + get_my_ip())
+    sys.argv.append("--NotebookApp.open_browser=False")
+    sys.argv.append("--NotebookApp.port=" + "49152")
+    sys.argv.append("--NotebookApp.allow_root=" + "True")
+    if "password" in env:
+        sys.argv.append("--NotebookApp.password=" + security.passwd(password))
+    launch_new_instance()
+
+
+if __name__ == "__main__":
+    main()
