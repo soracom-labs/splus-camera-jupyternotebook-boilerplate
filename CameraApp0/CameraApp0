@@ -53,8 +53,7 @@ def main():
     sys.argv.append("--NotebookApp.open_browser=False")
     sys.argv.append("--NotebookApp.port=" + "49152")
     sys.argv.append("--NotebookApp.allow_root=" + "True")
-    if "password" in env:
-        sys.argv.append("--NotebookApp.password=" + security.passwd(password))
+    sys.argv.append("--NotebookApp.password=" + security.passwd(password))
     launch_new_instance()
 
 

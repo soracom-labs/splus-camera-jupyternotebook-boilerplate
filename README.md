@@ -16,7 +16,7 @@ Next, you can configure browser access via `Remote Access`.
 
 ![configure_remote_access](./asset/img/mosaic_console_device_remoteaccess.png)
 
-The Jupyter Notebook expose port 9999 for browsers. You can configure remote access like below.
+The Jupyter Notebook expose port 49152 for browsers. You can configure remote access like below.
 
 ![configure_remote_access_modal](./asset/img/mosaic_console_device_remoteaccess_modal.png)
 
@@ -24,7 +24,7 @@ Finally, you can access to Jupyter Notebook with the url shown on the modal!
 
 ![configure_remote_access_result](./asset/img/mosaic_console_device_remoteaccess_result.png)
 
-It's all set, did Jupyter Notebook screen show up on your browser? You can start your application development on your S+ Camera Basic now. You can use `camera_demo.ipynb` as your starter code.
+It's all set, did Jupyter Notebook screen show up on your browser? Please login with your password above, then you can start your application development on your S+ Camera Basic now. You can use `camera_demo.ipynb` as your starter code.
 
 *If Jupyter Notebook screen does not show up immediately, please wait a few minutes and try again, because after the installation modal disappear, still it will take few minutes to bootstrap Jupyter Notebook.(Internally, it does installing Jupyter and some modules via pip).*
 
