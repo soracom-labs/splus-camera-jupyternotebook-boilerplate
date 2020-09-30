@@ -4,7 +4,7 @@ This project enables to run Jupyer Notebook on S+ Camera Basic, which makes you 
 
 ## Getting Started
 
-Open your S+ Camera Basic device on SORACOM Mosaic console, then install the latest release package. You can find one in [Releases](https://github.com/soracom/surplus_jupyter_notebook/releases/). The modal will tell you how it goes step by step, like device is downloading the package, installing package, and when it's done, the modal will disappear. After installation procedure has been finished, you can find `PACKAGE_NAME` got updated as `Jupyter Notebook boilerplate project for S+ Camera Basic.` Now you can configure browser access to the notebook.
+Open your S+ Camera Basic device on SORACOM Mosaic console, then install by copy & paste [the latest built package URL](https://raw.githubusercontent.com/soracom-labs/splus-camera-jupyternotebook-boilerplate/master/build/CameraApp0.tgz). The modal will tell you how it goes step by step, like device is downloading the package, installing package, and when it's done, the modal will disappear. After installation procedure has been finished, you can find `PACKAGE_NAME` got updated as `Jupyter Notebook boilerplate project for S+ Camera Basic.` Now you can configure browser access to the notebook.
 
 ![install](./asset/img/mosaic_console_device_install.png)
 
