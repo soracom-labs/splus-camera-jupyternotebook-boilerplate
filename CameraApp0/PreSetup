@@ -1,5 +1,5 @@
 #!/bin/bash
 
 pip install notebook
-pip install matplotlib
+pip install matplotlib==3.3.2
 pip freeze
