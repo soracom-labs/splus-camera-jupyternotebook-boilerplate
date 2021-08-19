@@ -1,5 +1,4 @@
 #!/bin/bash
 
-pip install notebook
-pip install matplotlib
+pip install -r requirements.txt
 pip freeze
