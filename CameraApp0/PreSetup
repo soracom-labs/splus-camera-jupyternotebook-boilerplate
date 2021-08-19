@@ -1,5 +1,4 @@
 #!/bin/bash
 
-pip install notebook
-pip install matplotlib==3.3.2
+pip install -r requirements.txt
 pip freeze
