@@ -1,6 +1,6 @@
 # Jupyter Notebook Boilerplate Project for S+ Camera Basic
 
-This project enables to run Jupyer Notebook on S+ Camera Basic, which makes you interactive application development.
+This project enables to run Jupyter Notebook on S+ Camera Basic, which makes you interactive application development.
 
 ## Getting Started
 
@@ -26,5 +26,4 @@ Finally, you can access to Jupyter Notebook with the url shown on the modal!
 
 It's all set, did Jupyter Notebook screen show up on your browser? Please login with your password above, then you can start your application development on your S+ Camera Basic now. You can use `camera_demo.ipynb` as your starter code.
 
-*If Jupyter Notebook screen does not show up immediately, please wait a few minutes and try again, because after the installation modal disappear, still it will take few minutes to bootstrap Jupyter Notebook.(Internally, it does installing Jupyter and some modules via pip).*
-
+_If Jupyter Notebook screen does not show up immediately, please wait a few minutes and try again, because after the installation modal disappear, still it will take few minutes to bootstrap Jupyter Notebook.(Internally, it does installing Jupyter and some modules via pip)._
