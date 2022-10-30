@@ -1,2 +1,2 @@
-notebook==6.5.1
+notebook==6.5.2
 matplotlib==3.5.3
